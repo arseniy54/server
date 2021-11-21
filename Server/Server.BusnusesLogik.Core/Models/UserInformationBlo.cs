@@ -1,29 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Server.DataAcess.Core.Models
+namespace Server.BusnusesLogik.Core.Models
 {
-    [Table("User")]
-    public class UserRto
+    public class UserInformationBlo
     {
+            
         [Key] public int Id { get; set; }
 
-        public string Login { get; set; }
+        public bool IsBoy { get; set; }
 
         public string Email { get; set; }
 
         [Required] public string PhoneNumberPrefix { get; set; }
 
         [Required] public string PhoneNumber { get; set; }
-
-        public bool IsBoy { get; set; }
-
-        [Required, MinLength(7)] public string Password { get; set; }
 
         public string FirstName { get; set; }
 
@@ -35,13 +30,5 @@ namespace Server.DataAcess.Core.Models
 
         public string AvatarUrl { get; set; }
 
-        [Required] public UserRoleRto Role { get; set; }
-
-
-
-        [NotMapped] public string GetFullName {
-            get => FirstName + " " + LastName + " " + Patronymic;
-
-        }
     }
 }

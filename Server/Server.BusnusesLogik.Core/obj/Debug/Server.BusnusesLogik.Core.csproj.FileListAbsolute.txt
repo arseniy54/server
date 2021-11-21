@@ -1,0 +1,2 @@
+C:\Users\StudentDev\Documents\GitHub\server\Server\Server.BusnusesLogik.Core\obj\Debug\Server.BusnusesLogik.Core.csprojAssemblyReference.cache
+C:\Users\StudentDev\Documents\GitHub\server\Server\Server.BusnusesLogik.Core\obj\Debug\Server.BusnusesLogik.Core.csproj.CoreCompileInputs.cache
